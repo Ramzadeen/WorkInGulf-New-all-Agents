@@ -1,0 +1,227 @@
+/* Color Palette Settings */
+:root {
+    --navy-dark: #0f172a;
+    --navy-light: #1e293b;
+    --emerald-green: #10b981;
+    --emerald-hover: #059669;
+    --text-white: #ffffff;
+    --text-gray: #64748b;
+    --bg-light: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--navy-dark);
+}
+
+/* Header */
+header {
+    background-color: var(--navy-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+header .logo {
+    color: var(--text-white);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: var(--emerald-green);
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--emerald-green);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--navy-dark), var(--navy-light));
+    color: var(--text-white);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container button {
+    background-color: var(--emerald-green);
+    color: var(--text-white);
+    border: none;
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover {
+    background-color: var(--emerald-hover);
+}
+
+/* Filters Section */
+.filters-section {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filters-section h3 {
+    font-size: 16px;
+    color: var(--navy-light);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: #e2e8f0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--navy-dark);
+    color: var(--text-white);
+}
+
+/* Agency Cards Grid */
+.agency-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.agency-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.agency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.agency-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.status-badge.verified {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.agency-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--navy-dark);
+}
+
+.agency-card .license {
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.agency-card .details p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.view-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--navy-dark);
+    color: var(--navy-dark);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    background-color: var(--navy-dark);
+    color: var(--text-white);
+}
+
+/* Footer */
+footer {
+    background-color: var(--navy-dark);
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkinGulf | Sri Lankan Employment Agency Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">Workin<span>Gulf</span></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Agencies</a>
+            <a href="#">Vacancies</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Search Hero Section -->
+    <section class="hero">
+        <h1>Find Registered Sri Lankan Employment Agencies</h1>
+        <p>Your trusted directory for safe, verified overseas employment opportunities.</p>
+        
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search by agency name, city, or license number...">
+            <button id="searchBtn">Search Directory</button>
+        </div>
+    </section>
+
+    <!-- Industry Filters -->
+    <section class="filters-section">
+        <h3>Filter by Sector:</h3>
+        <div class="filter-buttons">
+            <button class="filter-btn active">All Sectors</button>
+            <button class="filter-btn">Hospitality</button>
+            <button class="filter-btn">Healthcare</button>
+            <button class="filter-btn">IT & Tech</button>
+            <button class="filter-btn">Construction</button>
+        </div>
+    </section>
+
+    <!-- Agency Grid Container -->
+    <main class="agency-container">
+        <h2>Featured Agencies</h2>
+        <div class="agency-grid" id="agencyGrid">
+            <!-- Sample Agency Card 1 -->
+            <div class="agency-card">
+                <span class="status-badge verified">SLBFE Verified</span>
+                <h3>Lanka Gulf Recruiters</h3>
+                <p class="license">License No: 4500 / SLBFE</p>
+                <div class="details">
+                    <p>📍 <strong>Location:</strong> Colombo 03</p>
+                    <p>💼 <strong>Main Sectors:</strong> Hospitality, Retail</p>
+                </div>
+                <button class="view-btn">View Vacancies</button>
+            </div>
+
+            <!-- Sample Agency Card 2 -->
+            <div class="agency-card">
+                <span class="status-badge verified">SLBFE Verified</span>
+                <h3>Apex International Bureau</h3>
+                <p class="license">License No: 2890 / SLBFE</p>
+                <div class="details">
+                    <p>📍 <strong>Location:</strong> Kandy</p>
+                    <p>💼 <strong>Main Sectors:</strong> Healthcare, Construction</p>
+                </div>
+                <button class="view-btn">View Vacancies</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WorkinGulf. All Rights Reserved. Verified Directory for Sri Lankan Job Seekers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
