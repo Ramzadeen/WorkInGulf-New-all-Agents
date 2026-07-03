@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Lanka Gulf Recruiters",
+        "license": "4500 / SLBFE",
+        "location": "Colombo 03",
+        "sector": "Hospitality",
+        "phone": "+94 11 234 5678",
+        "verified": true
+    },
+    {
+        "id": 2,
+        "name": "Apex International Bureau",
+        "license": "2890 / SLBFE",
+        "location": "Kandy",
+        "sector": "Healthcare",
+        "phone": "+94 81 987 6543",
+        "verified": true
+    },
+    {
+        "id": 3,
+        "name": "Serendib Global Placement",
+        "license": "1234 / SLBFE",
+        "location": "Gampaha",
+        "sector": "Construction",
+        "phone": "+94 33 456 7890",
+        "verified": false
+    }
+]
